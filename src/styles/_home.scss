@@ -1,0 +1,17 @@
+.home {
+    width: 70%;
+    padding:2em 3em;
+    line-height: 3em;
+    text-align: center;
+    margin-left: 3em;
+}
+
+.text-who-are-we{
+    line-height: 1.5em;
+    span {
+        font-weight: $weight-8;
+        line-height: 2.2em;
+        font-size: 1.3em;
+        font-family: $ff-5;
+    }
+}
