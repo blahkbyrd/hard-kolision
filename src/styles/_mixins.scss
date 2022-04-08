@@ -1,0 +1,13 @@
+@mixin navigator {
+    ul {
+        list-style-type: none;
+        li {
+            display: inline;
+            margin: 1em;
+        }
+        a{
+            text-decoration: none;
+            
+        }
+    }
+}

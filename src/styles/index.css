@@ -1,5 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Capriola&family=East+Sea+Dokdo&family=Karantina:wght@300;400;700&family=Metal+Mania&family=Montserrat+Subrayada:wght@400;700&family=Mouse+Memoirs&family=Rajdhani:wght@300;500;600&family=Road+Rage&display=swap");
+/*===========FONT===========*/
+/*==========COLORS==============*/
 .logo-image {
-  max-width: 100px;
+  max-width: 100%;
   max-height: auto;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  color: #090909;
+  background: #afafaf;
+  font-family: sans-serif;
+}
+
+.logo-container {
+  max-width: 250px;
+  height: auto;
+  position: relative;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
+  margin-left: 1.5em;
+}
+
+.logo-image {
+  position: absolute;
+  top: -1.5em;
+  left: 1em;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-animation: spin 5s backwards linear;
+          animation: spin 5s backwards linear;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    left: 120em;
+    top: -2.5em;
+  }
+  100% {
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    left: 1em;
+    top: -1.5em;
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    left: 120em;
+    top: -2.5em;
+  }
+  100% {
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    left: 1em;
+    top: -1.5em;
+  }
+}
+
+.banner {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 9;
+  grid-column: 3/12;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.banner .banner-title {
+  -webkit-text-fill-color: transparent;
+  margin: 0.5em 0 0 6em;
+  font-family: "Montserrat Subrayada", sans-serif;
+  font-size: 4rem;
+  -webkit-animation: shine 4s linear 2s forwards, displayTitle 0.001s linear 4s forwards;
+          animation: shine 4s linear 2s forwards, displayTitle 0.001s linear 4s forwards;
+}
+
+.banner .banner-slogan {
+  margin: 3em 0 0 15em;
+  font-family: "Montserrat Subrayada", sans-serif;
+}
+
+.nav-header {
+  grid-column: 11 / auto;
+  -ms-grid-row: 4;
+  grid-row: 4;
+}
+
+.nav-header ul {
+  list-style-type: none;
+}
+
+.nav-header ul li {
+  display: inline;
+  margin: 1em;
+}
+
+.nav-header ul a {
+  text-decoration: none;
+}
+
+.nav-header a {
+  color: #090909;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+@-webkit-keyframes displayTitle {
+  from {
+    -webkit-text-fill-color: transparent;
+  }
+  to {
+    -webkit-text-fill-color: black;
+  }
+}
+
+@keyframes displayTitle {
+  from {
+    -webkit-text-fill-color: transparent;
+  }
+  to {
+    -webkit-text-fill-color: black;
+  }
+}
+
+@-webkit-keyframes shine {
+  0% {
+    background: -webkit-gradient(linear, left top, right top, from(#afafaf), color-stop(#343434), to(black));
+    background: linear-gradient(90deg, #afafaf, #343434, black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position-x: 500%;
+  }
+  100% {
+    background-position-x: -500%;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background: -webkit-gradient(linear, left top, right top, from(#afafaf), color-stop(#343434), to(black));
+    background: linear-gradient(90deg, #afafaf, #343434, black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position-x: 500%;
+  }
+  100% {
+    background-position-x: -500%;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=index.css.map */
