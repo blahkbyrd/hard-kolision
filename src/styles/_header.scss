@@ -10,6 +10,8 @@
 // }
 
 .header {
+    @include fixed;
+    top:0;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     color: $almost-black;
@@ -28,25 +30,24 @@
 
 .logo-image {
     position: absolute;
-    top: -1.5em;
+    top: -2.5em;
     left: 1em;
     transform-origin: center center;
-    animation: spin 5s backwards linear;
+    animation: spin 4s backwards linear;
 }
 
 @keyframes spin {
-    0% {
+    from {
         transform: rotate(360deg);
         transform-origin: center center;
         left: 120em;
-        top: -2.5em;
+        top: -3.5em;
     }
-    100% {
+    to {
         transform-origin: center center;
-
         transform: rotate(0deg);
         left: 1em;
-        top: -1.5em;
+        top: -2.5em;
     }
 }
 .banner {
@@ -57,7 +58,9 @@
         margin: 0.5em 0 0 6em;
         font-family: $ff-5;
         font-size: $title-fs;
-        animation: shine 4s linear 2s forwards, displayTitle 0.001s linear 4s forwards;
+        animation: 
+        shine 3s linear 2s forwards, 
+        displayTitle 0.001s linear 3.5s forwards;
         //opacity: 0;
         //animation: displayTitle 3s linear 2s forwards;
     }

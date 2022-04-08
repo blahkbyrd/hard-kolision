@@ -3,9 +3,23 @@
 
 @import './header';
 @import './footer';
+@import './aside';
+@import './home';
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+   
+}
+
+.body-container {
+    display: flex;
+    padding: 10em 0 4em 0;
+    background: $almost-black;
+    color: $almost-white;
+    font-family: sans-serif;
 }

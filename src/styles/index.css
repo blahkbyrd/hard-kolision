@@ -7,6 +7,11 @@
 }
 
 .header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  top: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -31,49 +36,49 @@
 
 .logo-image {
   position: absolute;
-  top: -1.5em;
+  top: -2.5em;
   left: 1em;
   -webkit-transform-origin: center center;
           transform-origin: center center;
-  -webkit-animation: spin 5s backwards linear;
-          animation: spin 5s backwards linear;
+  -webkit-animation: spin 4s backwards linear;
+          animation: spin 4s backwards linear;
 }
 
 @-webkit-keyframes spin {
-  0% {
+  from {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
     -webkit-transform-origin: center center;
             transform-origin: center center;
     left: 120em;
-    top: -2.5em;
+    top: -3.5em;
   }
-  100% {
+  to {
     -webkit-transform-origin: center center;
             transform-origin: center center;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
     left: 1em;
-    top: -1.5em;
+    top: -2.5em;
   }
 }
 
 @keyframes spin {
-  0% {
+  from {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
     -webkit-transform-origin: center center;
             transform-origin: center center;
     left: 120em;
-    top: -2.5em;
+    top: -3.5em;
   }
-  100% {
+  to {
     -webkit-transform-origin: center center;
             transform-origin: center center;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
     left: 1em;
-    top: -1.5em;
+    top: -2.5em;
   }
 }
 
@@ -90,9 +95,9 @@
   -webkit-text-fill-color: transparent;
   margin: 0.5em 0 0 6em;
   font-family: "Montserrat Subrayada", sans-serif;
-  font-size: 4rem;
-  -webkit-animation: shine 4s linear 2s forwards, displayTitle 0.001s linear 4s forwards;
-          animation: shine 4s linear 2s forwards, displayTitle 0.001s linear 4s forwards;
+  font-size: 3rem;
+  -webkit-animation: shine 3s linear 2s forwards,  displayTitle 0.001s linear 3.5s forwards;
+          animation: shine 3s linear 2s forwards,  displayTitle 0.001s linear 3.5s forwards;
 }
 
 .banner .banner-slogan {
@@ -177,7 +182,7 @@
   position: fixed;
   left: 0;
   right: 0;
-  z-index: 0;
+  z-index: 99;
   bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,7 +190,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1em-+-calc();
+  padding: 0.5em;
   font-family: sans-serif;
   background: #afafaf;
 }
@@ -198,7 +203,7 @@
 
 .footer-item-mid {
   text-align: center;
-  line-height: 1.5em;
+  line-height: 1.1em;
 }
 
 #bb {
@@ -206,10 +211,107 @@
   margin-bottom: 0.5em;
 }
 
+.aside {
+  position: relative;
+  left: 0;
+  padding: 2em 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+  text-align: center;
+  line-height: 3em;
+}
+
+.aside img {
+  width: 50%;
+}
+
+.aside img:hover {
+  -webkit-animation: moveImage forwards 3s ease;
+          animation: moveImage forwards 3s ease;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat Subrayada", sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+@-webkit-keyframes moveImage {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    width: 50%;
+  }
+  to {
+    -webkit-transform: translate(16em, -7em);
+            transform: translate(16em, -7em);
+    width: 95%;
+  }
+}
+
+@keyframes moveImage {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    width: 50%;
+  }
+  to {
+    -webkit-transform: translate(16em, -7em);
+            transform: translate(16em, -7em);
+    width: 95%;
+  }
+}
+
+.home {
+  width: 70%;
+  padding: 2em 3em;
+  line-height: 3em;
+  text-align: center;
+  margin-left: 3em;
+}
+
+.text-who-are-we {
+  line-height: 1.5em;
+}
+
+.text-who-are-we span {
+  font-weight: 800;
+  line-height: 2.2em;
+  font-size: 1.3em;
+  font-family: "Montserrat Subrayada", sans-serif;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.body-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10em 0 4em 0;
+  background: #090909;
+  color: #eeeeee;
+  font-family: sans-serif;
 }
 /*# sourceMappingURL=index.css.map */
