@@ -1,0 +1,27 @@
+.footer {
+    @include fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em   -+
+    -calc(
+        
+    );
+    font-family: sans-serif;
+    background: $light-grey;
+}
+
+.footer-item-link {
+    text-decoration: none;
+    color: $almost-black;
+    font-weight: $weight-6;
+}
+
+.footer-item-mid {
+    text-align: center;
+    line-height: 1.5em;    
+}
+#bb{
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+}
