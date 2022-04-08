@@ -1,0 +1,41 @@
+.aside {
+    position: relative;
+    left: 0;
+    padding: 2em 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    text-align: center;
+    line-height: 3em;
+
+    img {
+        width: 50%;
+        //box-shadow: .1em .1em .3em .1em $dark-grey ;
+        &:hover {
+            animation: moveImage forwards 3s ease;
+        }
+    }
+}
+
+h1,
+h2 {
+    font-family: $ff-5;
+    font-weight: $weight-5;
+}
+h1 {
+    font-size: $subtitle-fs;
+}
+h2 {
+    font-size: 1.2rem;
+}
+@keyframes moveImage {
+    from {
+        transform: translate(0, 0);
+        width: 50%;
+    }
+    to {
+        transform: translate(16em, -7em);
+        width: 95%;
+    }
+}
