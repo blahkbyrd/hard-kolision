@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Footer extends Component {
   render () {
     return (
-      <div>
+      <div className='footer'>
         <p className='footer-item'>
           <a className='footer-item-link' href='#'>
             admin
@@ -11,7 +11,7 @@ class Footer extends Component {
         </p>
         <div className='footer-item-mid'>
           <p>Site imaginé par Hard Kolision</p>
-          <p>Concocté par blaHKbyrd</p>
+          <p id="bb">Concocté par blaHKbyrd</p>
           <p className='footer-item'>
             <a className='footer-item-link' href='#'>
               mention legales
