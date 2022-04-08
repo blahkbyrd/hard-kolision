@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AGEA,AAAA,WAAW,CAAA;EACP,SAAS,EAAE,KAAK;EAChB,UAAU,EAAE,IAAI;CACnB",
+    "sources": [
+        "index.scss",
+        "_variables.scss",
+        "_mixins.scss",
+        "_header.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}

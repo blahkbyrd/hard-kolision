@@ -4,7 +4,7 @@ class Radio extends Component {
     render() {
         return (
             <div>
-                
+                Radio
             </div>
         );
     }
